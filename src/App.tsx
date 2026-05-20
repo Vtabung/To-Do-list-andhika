@@ -54,17 +54,17 @@ return (
   <div className="min-h-screen bg-gray-900 text-white p-8">
 <h1
   className="text-5xl md:text-6xl font-extrabold text-center mb-10
-             text-cyan-300
-             bg-white/10
-             backdrop-blur-md
-             border border-cyan-400/30
-             rounded-3xl
-             py-5 px-8
-             tracking-wide
-             shadow-[0_0_30px_rgba(34,211,238,0.35)]
-             drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]
-             hover:shadow-[0_0_60px_rgba(34,211,238,0.7)]
-             transition-all duration-450"
+            text-cyan-300
+            bg-white/10
+            backdrop-blur-md
+            border border-cyan-400/30
+            rounded-3xl
+            py-5 px-8
+            tracking-wide
+            shadow-[0_0_30px_rgba(34,211,238,0.35)]
+            drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]
+            hover:shadow-[0_0_60px_rgba(34,211,238,0.7)]
+            transition-all duration-450"
 >
   📋 List Tugas Andhika Dianputra 📋 
 </h1>
