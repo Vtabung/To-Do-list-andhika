@@ -52,9 +52,22 @@ const columns: ColumenType[] = ['todo', 'doing', 'done']
 
 return (
   <div className="min-h-screen bg-gray-900 text-white p-8">
-    <h1 className="text-3x1 font-bold text-center mb-8">
-      📋 List Tugas Andhika Dianputra
-    </h1>
+<h1
+  className="text-5xl md:text-6xl font-extrabold text-center mb-10
+             text-cyan-300
+             bg-white/10
+             backdrop-blur-md
+             border border-cyan-400/30
+             rounded-3xl
+             py-5 px-8
+             tracking-wide
+             shadow-[0_0_30px_rgba(34,211,238,0.35)]
+             drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]
+             hover:shadow-[0_0_60px_rgba(34,211,238,0.7)]
+             transition-all duration-450"
+>
+  📋 List Tugas Andhika Dianputra 📋 
+</h1>
     <p className="text-center text-gray-400">
       Tasks: {tasks.length} | input: "{inputValue}" 
     </p>
@@ -64,12 +77,20 @@ return (
       value={inputValue}
       onChange={(e) => setinputValue(e.target.value)}
       onKeyDown={(e) => e.key === 'Enter' && addTask()}
-      placeholder="Tambah Task Baru..."
+      placeholder="Tambah Tugas Baru..."
       className="flex-1 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outlate-none focus:border-cyan-500 transition-colors"
       />
       <button
       onClick={addTask}
-      className='px-6 py-2 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold transition-colors'
+      className='px-6 py-2
+           bg-cyan-600 hover:bg-cyan-500
+           text-cyan-100
+           rounded-lg font-bold
+           border border-cyan-300/40
+           shadow-[0_0_10px_#22d3ee,0_0_20px_rgba(34,211,238,0.5)]
+           hover:shadow-[0_0_20px_#22d3ee,0_0_40px_rgba(34,211,238,0.9)]
+           hover:-translate-y-1
+           transition-all duration-300'
       >
         + Add
       </button>
@@ -112,7 +133,7 @@ return (
         <div className="space-y-2 min-h-[100px]">
           {columnTasks.length === 0 ? (
             <p className="text-gray-600 text-sm text-center py-8">
-              No tasks yet
+              Tidak ada tugas nih tambah donggg...
             </p>
           ) : (
             columnTasks.map((task) => (
@@ -132,8 +153,13 @@ return (
                           status === 'doing' ? 'todo' : 'doing'
                         )
                       }
-                      className="text-xs px-2 py-1 bg-gray-600 hover:bg-gray-500
-                                 rounded transition-colors cursor-pointer"
+            className='px-4 py-1.5
+           bg-cyan-600 hover:bg-cyan-500
+           text-sm text-white
+           rounded-md font-semibold
+           shadow-[0_0_10px_rgba(34,211,238,0.45)]
+           hover:shadow-[0_0_20px_rgba(34,211,238,0.8)]
+           transition-all duration-300'
                     >
                       ← Back
                     </button>
@@ -147,8 +173,13 @@ return (
                           status === 'todo' ? 'doing' : 'done'
                         )
                       }
-                      className="text-xs px-2 py-1 bg-cyan-600 hover:bg-cyan-500
-                                 rounded transition-colors cursor-pointer"
+          className='px-4 py-1.5
+           bg-cyan-600 hover:bg-cyan-500
+           text-sm text-white
+           rounded-md font-semibold
+           shadow-[0_0_10px_rgba(34,211,238,0.45)]
+           hover:shadow-[0_0_20px_rgba(34,211,238,0.8)]
+           transition-all duration-300'
                     >
                       Next →
                     </button>
