@@ -53,7 +53,7 @@ const columns: ColumenType[] = ['todo', 'doing', 'done']
 return (
   <div className="min-h-screen bg-gray-900 text-white p-8">
     <h1 className="text-3x1 font-bold text-center mb-8">
-      📋 Todo Board
+      📋 List Tugas Andhika Dianputra
     </h1>
     <p className="text-center text-gray-400">
       Tasks: {tasks.length} | input: "{inputValue}" 
